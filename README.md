@@ -1,13 +1,13 @@
 # AutoUVM - 自动化UVM验证环境生成工具
 
 <p align="center">
-  <img src="https://img.shields.io/badge/版本-v1.5.0-orange?style=for-the-badge" alt="Version"/>
+  <img src="https://img.shields.io/badge/版本-v1.6.0-orange?style=for-the-badge" alt="Version"/>
   <img src="https://img.shields.io/badge/状态-生产就绪-green?style=for-the-badge" alt="Status"/>
   <img src="https://img.shields.io/badge/协议-商业授权-blue?style=for-the-badge" alt="License"/>
 </p>
 
 <p align="center">
-  <strong>🚀 5分钟生成工业级UVM验证环境 | 支持AXI4 Full/APB/UART等协议 | 26+ SVA断言</strong>
+  <strong>🚀 5分钟生成工业级UVM验证环境 | 支持8种协议(AXI4/AHB-Lite/APB等) | 20+ SVA断言</strong>
 </p>
 
 <p align="center">
@@ -58,8 +58,9 @@ Coverage: 93.5% (Line), 89.2% (Functional)
 - ✅ **工业级质量** - 遵循UVM最佳实践
 - ✅ **零手工编码** - 开箱即用
 
-### 2️⃣ 强大的协议支持
-- 🔥 **AXI4 Full** - 5通道并行监控，ID-based追踪
+### 2️⃣ 强大的协议支持 (8种协议)
+- 🔥 **AXI4 Full** - 5通道并行监控，ID-based追踪 (v1.5)
+- 🔥 **AHB-Lite** - ARM高性能总线，流水线架构 (v1.6)
 - ✅ **AXI4-Lite** - 简化版高速接口
 - ✅ **APB** - 低功耗外设总线
 - ✅ **UART** - 串口通信
@@ -69,12 +70,21 @@ Coverage: 93.5% (Line), 89.2% (Functional)
 
 ### 3️⃣ 完整的验证功能
 - 📊 **自动覆盖率模型** - 代码+功能覆盖率
-- 🛡️ **26+ SVA协议检查** - 实时协议违规检测
+- 🛡️ **20+ SVA协议检查** - 实时协议违规检测
 - 🎯 **寄存器验证** - 自动RAL生成和测试
 - 🔄 **Coverage Loop** - 智能定向测试生成
 - 📈 **HTML报告** - 可视化覆盖率分析
 
-### 4️⃣ AXI4 Full完整实现（v1.5新增）
+### 4️⃣ AHB-Lite完整实现（v1.6新增）🔥
+- ⚡ **流水线架构** - 地址和数据相位正确分离
+- 🎯 **8种Burst类型** - SINGLE/INCR/WRAP4/INCR4/WRAP8/INCR8/WRAP16/INCR16
+- 💪 **Transfer Type状态机** - IDLE/BUSY/NONSEQ/SEQ完整支持
+- 🛡️ **20+ SVA断言** - 握手/burst/transfer type/超时检查
+- ⏱️ **Timeout保护** - 防止仿真挂起
+- 📏 **全参数化** - ADDR/DATA宽度可配置
+- 📝 **完整文档** - 详细使用指南和示例
+
+### 5️⃣ AXI4 Full完整实现（v1.5）
 - ⚡ **5通道并行监控** - AW/W/B/AR/R独立处理
 - 🎯 **ID-based事务追踪** - 支持Outstanding transactions
 - 💪 **完整Burst支持** - FIXED/INCR/WRAP三种模式
@@ -91,10 +101,14 @@ Coverage: 93.5% (Line), 89.2% (Functional)
 <td width="50%">
 
 ### 高速总线协议
-- **AXI4 Full** ⭐ NEW in v1.5
+- **AXI4 Full** ⭐ v1.5
   - 5通道完整实现
   - 26+ SVA协议检查
   - Outstanding支持
+- **AHB-Lite** ⭐ NEW in v1.6
+  - 流水线架构
+  - 20+ SVA协议检查
+  - 8种burst类型
 - **AXI4-Lite**
   - 简化版实现
   - 快速集成
