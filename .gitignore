@@ -1,0 +1,19 @@
+# AutoUVM-Showcase .gitignore
+
+# 这是展示项目，只包含公开材料
+# 核心代码在私有仓库
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 编辑器
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# 临时文件
+*.tmp
+*.bak

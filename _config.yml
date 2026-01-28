@@ -1,0 +1,5 @@
+# GitHub Pages配置
+theme: jekyll-theme-minimal
+title: AutoUVM
+description: 自动化UVM验证环境生成工具
+show_downloads: true
