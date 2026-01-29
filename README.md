@@ -27,9 +27,10 @@
 本仓库包含完整的**实际运行**代码：
 
 - 📁 [`examples/`](./examples/) - 多个完整验证环境示例
-  - [`01_timer_basic/`](./examples/01_timer_basic/) - Timer验证（单Agent，AXI-Lite）
-  - [`02_ahb_lite_memory/`](./examples/02_ahb_lite_memory/) - AHB-Lite内存控制器（单Agent）
-  - [`03_multi_module_soc/`](./examples/03_multi_module_soc/) - **多模块SoC（3个Agents）**⭐
+  - [`01_timer_basic/`](./examples/01_timer_basic/) - Timer验证（单Agent，AXI-Lite）✅
+  - [`02_ahb_lite_memory/`](./examples/02_ahb_lite_memory/) - AHB-Lite内存控制器（单Agent）✅
+  - [`03_multi_module_soc/`](./examples/03_multi_module_soc/) - **多模块SoC（3个Agents）**⭐ ✅
+  - [`04_bus_fabric_bridge/`](./examples/04_bus_fabric_bridge/) - **总线互联+桥接（7 Agents拓扑）**📋 规划
 - 📊 [`test_reports/`](./test_reports/) - 真实测试覆盖率报告
   - [`verification_report.html`](./test_reports/verification_report.html) - 多模块SoC验证报告
 
@@ -387,8 +388,11 @@ firefox coverage_report/index.html
 - ✅ 覆盖率驱动验证
 
 ### v2.0 (规划中) 📋
-- 📋 PCIe协议支持
-- 📋 Ethernet MAC验证
+- 📋 复杂拓扑支持（多Master-多Slave）
+- 📋 协议桥接（AXI↔APB自动转换）
+- 📋 总线互联自动生成
+- 📋 PCIe/CHI高级协议
+- 📋 片上网络(NoC)验证
 - 📋 形式化验证集成
 - 📋 AI辅助测试生成
 
