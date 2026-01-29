@@ -541,7 +541,7 @@ AutoUVM - 自动化UVM验证环境生成
 发布前请修改：
 1. `[YOUR_USERNAME]` → 你的GitHub用户名
 2. `[Link]` → 实际网站链接
-3. `autouvm@example.com` → 真实邮箱
+3. `honjun@tju.edu.cn` → 真实邮箱
 4. 添加实际的截图和GIF
 
 ### A/B测试

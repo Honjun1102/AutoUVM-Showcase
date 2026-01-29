@@ -13,7 +13,7 @@ AutoUVM-Showcase/
 │
 ├── examples/                      # ⭐ 完整示例代码
 │   ├── README.md                  # 示例总览
-│   ├── 01_timer_basic/            # Timer验证示例（AXI-Lite）
+│   ├── 01_timer_basic/            # Timer验证示例（单Agent，AXI-Lite）
 │   │   ├── README.md              # 详细说明
 │   │   ├── agents/                # 生成的UVM Agents
 │   │   │   ├── axil_agent.sv
@@ -35,25 +35,42 @@ AutoUVM-Showcase/
 │   │   ├── Makefile               # VCS编译脚本
 │   │   └── verification_report.html  # 覆盖率报告
 │   │
-│   └── 02_ahb_lite_memory/        # AHB-Lite内存控制器示例
+│   ├── 02_ahb_lite_memory/        # AHB-Lite内存控制器示例（单Agent）
+│   │   ├── README.md              # 详细说明
+│   │   ├── rtl/                   # RTL源码
+│   │   │   └── ahb_lite_memory.v
+│   │   ├── generated_uvm/         # 生成的UVM环境
+│   │   │   ├── tb/                # Testbench文件
+│   │   │   │   ├── ahb_lite_agent.sv
+│   │   │   │   ├── ahb_lite_driver.sv
+│   │   │   │   ├── ahb_lite_monitor.sv
+│   │   │   │   └── ...
+│   │   │   ├── checkers/          # 协议检查器
+│   │   │   │   └── ahb_lite_checker.sv
+│   │   │   ├── sim/               # 仿真脚本
+│   │   │   │   └── Makefile
+│   │   │   └── README.md
+│   │   ├── tb/                    # 自定义测试序列
+│   │   │   └── ahb_lite_memory_test_seq.sv
+│   │   ├── generate_uvm_env.py    # 生成脚本
+│   │   └── ahb_lite_memory_config.yaml  # 配置文件
+│   │
+│   └── 03_multi_module_soc/       # 多模块SoC示例（3个Agents）⭐
 │       ├── README.md              # 详细说明
-│       ├── rtl/                   # RTL源码
-│       │   └── ahb_lite_memory.v
-│       ├── generated_uvm/         # 生成的UVM环境
-│       │   ├── tb/                # Testbench文件
-│       │   │   ├── ahb_lite_agent.sv
-│       │   │   ├── ahb_lite_driver.sv
-│       │   │   ├── ahb_lite_monitor.sv
-│       │   │   └── ...
-│       │   ├── checkers/          # 协议检查器
-│       │   │   └── ahb_lite_checker.sv
-│       │   ├── sim/               # 仿真脚本
-│       │   │   └── Makefile
-│       │   └── README.md
-│       ├── tb/                    # 自定义测试序列
-│       │   └── ahb_lite_memory_test_seq.sv
-│       ├── generate_uvm_env.py    # 生成脚本
-│       └── ahb_lite_memory_config.yaml  # 配置文件
+│       ├── verification_report.html  # 系统级覆盖率报告
+│       ├── timer/                 # Timer模块（APB Agent）
+│       │   ├── agents/apb_agent/
+│       │   ├── ral/               # 寄存器抽象层
+│       │   ├── env/
+│       │   └── ...
+│       ├── uart/                  # UART模块（UART Agent）
+│       │   ├── agents/uart_agent/
+│       │   ├── env/
+│       │   └── ...
+│       └── spi/                   # SPI模块（SPI Agent）
+│           ├── agents/spi_agent/
+│           ├── env/
+│           └── ...
 │
 ├── test_reports/                  # ⭐ 真实测试报告
 │   ├── README.md                  # 报告说明
@@ -78,8 +95,9 @@ AutoUVM-Showcase/
 ## 🎯 关键特点
 
 ### 1. 真实可运行的代码
-- ✅ **01_timer_basic/** - 完整的Timer验证环境（2000+行）
-- ✅ **02_ahb_lite_memory/** - AHB-Lite示例（2500+行）
+- ✅ **01_timer_basic/** - 完整的Timer验证环境（单Agent，2000+行）
+- ✅ **02_ahb_lite_memory/** - AHB-Lite示例（单Agent，2500+行）
+- ✅ **03_multi_module_soc/** - 多模块SoC（3个Agents，6000+行）⭐
 - ✅ 所有代码都是AutoUVM**实际生成**的，非演示代码
 
 ### 2. 真实测试报告
@@ -116,6 +134,20 @@ RTL:          150 行 (ahb_lite_memory.v)
   - Tests:     400 行
 生成时间:     4 分钟
 协议检查:     20+ SVA断言
+```
+
+### 示例3: Multi-Module SoC ⭐
+```
+RTL:          800+ 行 (timer.v + uart.v + spi.v)
+生成UVM:     6,000+ 行
+  - APB Agent:  1,000 行 (Timer)
+  - UART Agent:   800 行
+  - SPI Agent:    900 行
+  - Envs:       1,200 行
+  - Tests:      1,100 行
+生成时间:     12 分钟
+Agent数量:    3个独立Agent
+覆盖率:       90%+ (系统级)
 ```
 
 ### 测试报告
@@ -166,7 +198,8 @@ cat blog/article1_5min_uvm_generation.md
 
 ## 📞 联系方式
 
-- **Email**: honjun1102@gmail.com
+- **Email**: honjun@tju.edu.cn
+- **电话**: 13237089603
 - **GitHub**: https://github.com/Honjun1102/AutoUVM
 - **网站**: https://honjun1102.github.io/AutoUVM-Showcase/
 

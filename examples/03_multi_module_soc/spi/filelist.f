@@ -1,0 +1,17 @@
++incdir+/src
++incdir+.
++incdir+./agents
++incdir+./agents/spi_agent
++incdir+./components
++incdir+./env
++incdir+./interfaces
++incdir+./ral
++incdir+./rtl
++incdir+./scoreboards
++incdir+./tests
+interfaces/autouvm_clk_rst_if.sv
+interfaces/spi_if.sv
+agents/spi_agent/spi_agent_pkg.sv
+env/spi_env_pkg.sv
+tests/spi_base_test.sv
+tb_top.sv

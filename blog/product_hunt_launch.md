@@ -266,7 +266,7 @@ firefox coverage_report/index.html
 ## 🔗 Links
 
 - 🌐 Website: https://[YOUR_USERNAME].github.io/AutoUVM-Showcase/
-- 📧 Contact: autouvm@example.com
+- 📧 Contact: honjun@tju.edu.cn
 - 💬 GitHub: https://github.com/[YOUR_USERNAME]/AutoUVM-Showcase
 
 ---
@@ -402,7 +402,7 @@ Let's make chip verification faster and more reliable together!
 - 企业版：定制协议+现场培训
 - 学术版：特殊优惠
 
-详细报价请联系：autouvm@example.com
+详细报价请联系：honjun@tju.edu.cn
 我们会根据您的具体需求提供方案！
 ```
 
@@ -567,4 +567,4 @@ AutoUVM的核心代码是商业软件，但我们计划开源部分组件：
 
 ---
 
-*记得更新所有 `[YOUR_USERNAME]` 和 `autouvm@example.com` 为真实信息！*
+*记得更新所有 `[YOUR_USERNAME]` 和 `honjun@tju.edu.cn` 为真实信息！*

@@ -125,5 +125,5 @@ make all
 
 ## 📞 技术支持
 
-- **Email**: honjun1102@gmail.com
+- **Email**: honjun@tju.edu.cn
 - **项目主页**: https://github.com/Honjun1102/AutoUVM

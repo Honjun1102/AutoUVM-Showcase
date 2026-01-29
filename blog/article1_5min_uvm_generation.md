@@ -567,7 +567,7 @@ RTL代码
 - ✅ 源码授权（可选）
 
 ### 联系我们
-- 📧 邮箱: autouvm@example.com
+- 📧 邮箱: honjun@tju.edu.cn
 - 🌐 官网: https://[YOUR_USERNAME].github.io/AutoUVM-Showcase/
 - 💬 GitHub: https://github.com/[YOUR_USERNAME]/AutoUVM-Showcase
 

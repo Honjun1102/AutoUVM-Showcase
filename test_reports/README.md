@@ -69,7 +69,7 @@ google-chrome verification_report.html
 
 - **详细文档**: [AutoUVM Documentation](https://github.com/Honjun1102/AutoUVM-Showcase)
 - **技术博客**: 查看 `/blog/` 目录
-- **联系我们**: honjun1102@gmail.com
+- **联系我们**: honjun@tju.edu.cn
 
 ## 🎓 报告生成流程
 

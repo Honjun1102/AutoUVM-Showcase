@@ -1,0 +1,17 @@
++incdir+/src
++incdir+.
++incdir+./agents
++incdir+./agents/uart_agent
++incdir+./components
++incdir+./env
++incdir+./interfaces
++incdir+./ral
++incdir+./rtl
++incdir+./scoreboards
++incdir+./tests
+interfaces/autouvm_clk_rst_if.sv
+interfaces/uart_if.sv
+agents/uart_agent/uart_agent_pkg.sv
+env/uart_env_pkg.sv
+tests/uart_base_test.sv
+tb_top.sv

@@ -1,0 +1,39 @@
+global coverage_group 0 0 spi_env_pkg::spi_env_coverage::spi_cg __coverage_spi_env_coverage.spi_cg unused_spi_env_coverage_spi_cg_loop_label spi_env_pkg 0 1 0 0 0  ( 0 
+)
+ 1 1
+ 0 79 /home/yian/桌面/AutoUVM/test_results/multi_module/spi/env/spi_env_coverage.sv
+ 17 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 56 spi_env_coverage::spi_env_pkg_spi_env_coverage_spi_cg_fn
+0
+0
+0
+64
+0
+ 0
+
+0
+0
+0
+0
+end_coverage_group

@@ -1,0 +1,39 @@
+global coverage_group 0 0 uart_env_pkg::uart_env_coverage::uart_cg __coverage_uart_env_coverage.uart_cg unused_uart_env_coverage_uart_cg_loop_label uart_env_pkg 0 1 0 0 0  ( 0 
+)
+ 1 1
+ 0 81 /home/yian/桌面/AutoUVM/test_results/multi_module/uart/env/uart_env_coverage.sv
+ 17 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 60 uart_env_coverage::uart_env_pkg_uart_env_coverage_uart_cg_fn
+0
+0
+0
+64
+0
+ 0
+
+0
+0
+0
+0
+end_coverage_group

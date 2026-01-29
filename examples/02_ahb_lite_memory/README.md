@@ -404,7 +404,7 @@ endclass
 
 - GitHub Issues: [https://github.com/Honjun1102/AutoUVM/issues](https://github.com/Honjun1102/AutoUVM/issues)
 - Documentation: [https://github.com/Honjun1102/AutoUVM/docs](https://github.com/Honjun1102/AutoUVM/docs)
-- Email: honjun1102@gmail.com
+- Email: honjun@tju.edu.cn
 
 ---
 

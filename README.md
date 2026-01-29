@@ -27,8 +27,9 @@
 本仓库包含完整的**实际运行**代码：
 
 - 📁 [`examples/`](./examples/) - 多个完整验证环境示例
-  - [`01_timer_basic/`](./examples/01_timer_basic/) - Timer验证（AXI-Lite）
-  - [`02_ahb_lite_memory/`](./examples/02_ahb_lite_memory/) - AHB-Lite内存控制器
+  - [`01_timer_basic/`](./examples/01_timer_basic/) - Timer验证（单Agent，AXI-Lite）
+  - [`02_ahb_lite_memory/`](./examples/02_ahb_lite_memory/) - AHB-Lite内存控制器（单Agent）
+  - [`03_multi_module_soc/`](./examples/03_multi_module_soc/) - **多模块SoC（3个Agents）**⭐
 - 📊 [`test_reports/`](./test_reports/) - 真实测试覆盖率报告
   - [`verification_report.html`](./test_reports/verification_report.html) - 多模块SoC验证报告
 
@@ -351,9 +352,8 @@ firefox coverage_report/index.html
 
 ### 联系方式
 
-- **📧 邮箱**: autouvm@example.com
-- **💬 微信**: AutoUVM_Official
-- **📱 电话**: +86 XXX-XXXX-XXXX
+- **📧 邮箱**: honjun@tju.edu.cn
+- **📱 电话**: 13237089603
 - **🌐 官网**: https://honjun1102.github.io/AutoUVM-Showcase/
 
 ### 商务咨询
@@ -374,15 +374,17 @@ firefox coverage_report/index.html
 
 ## 🎯 路线图
 
-### v1.5 (当前版本) ✅
+### v1.6 ✅ (当前版本)
+- ✅ AHB-Lite协议完整支持
+- ✅ 流水线架构实现
+- ✅ 20+ SVA协议检查器
+- ✅ 8种Burst类型支持
+- ✅ 多Agent系统级验证
+
+### v1.5 ✅
 - ✅ AXI4 Full完整支持
 - ✅ 26+ SVA协议检查
 - ✅ 覆盖率驱动验证
-
-### v1.6 (开发中) 🚧
-- 🚧 AHB-Lite协议支持
-- 🚧 AXI4-Stream数据流协议
-- 🚧 增强的覆盖率分析
 
 ### v2.0 (规划中) 📋
 - 📋 PCIe协议支持
