@@ -1,0 +1,17 @@
++incdir+/src
++incdir+.
++incdir+./agents
++incdir+./agents/fifo_agent
++incdir+./components
++incdir+./env
++incdir+./interfaces
++incdir+./ral
++incdir+./rtl
++incdir+./scoreboards
++incdir+./tests
+interfaces/autouvm_clk_rst_if.sv
+interfaces/fifo_if.sv
+agents/fifo_agent/fifo_agent_pkg.sv
+env/fifo_env_pkg.sv
+tests/fifo_base_test.sv
+tb_top.sv

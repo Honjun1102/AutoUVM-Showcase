@@ -1,0 +1,67 @@
+# AutoUVM AHB-Lite Memory 测试配置
+# 用于生成AHB-Lite验证环境
+
+# 项目基本信息
+project:
+  name: ahb_lite_memory_uvm
+  top_module: ahb_lite_memory
+  description: "AHB-Lite Memory Controller UVM Testbench"
+
+# RTL源文件
+sources:
+  - path: examples/ahb_lite_memory/rtl/ahb_lite_memory.v
+    type: verilog
+
+# 协议配置
+protocols:
+  - type: ahb_lite
+    role: slave
+    signals:
+      HCLK: HCLK
+      HRESETn: HRESETn
+      HSEL: HSEL
+      HADDR: HADDR
+      HWRITE: HWRITE
+      HSIZE: HSIZE
+      HBURST: HBURST
+      HTRANS: HTRANS
+      HWDATA: HWDATA
+      HRDATA: HRDATA
+      HREADY: HREADY
+      HRESP: HRESP
+    parameters:
+      addr_width: 16
+      data_width: 32
+
+# 时钟域
+clock_domains:
+  - name: main
+    clk: HCLK
+    rst: HRESETn
+    rst_active_low: true
+    description: "Main AHB-Lite clock domain"
+
+# 生成选项
+generation:
+  enable_ral: false
+  enable_coverage: true
+  enable_checker: true
+  enable_timeout: true
+  timeout_cycles: 2000
+
+# 仿真配置
+simulation:
+  simulator: vcs
+  compile_args:
+    - "-full64"
+    - "-sverilog"
+    - "-ntb_opts uvm-1.2"
+    - "+incdir+$UVM_HOME/src"
+    - "-timescale=1ns/1ps"
+    - "-debug_access+all"
+  
+# 测试配置
+tests:
+  - name: ahb_lite_basic_test
+    description: "Basic AHB-Lite read/write test"
+    num_transactions: 100

@@ -1,0 +1,17 @@
++incdir+/src
++incdir+.
++incdir+./agents
++incdir+./agents/i2c_agent
++incdir+./components
++incdir+./env
++incdir+./interfaces
++incdir+./ral
++incdir+./rtl
++incdir+./scoreboards
++incdir+./tests
+interfaces/autouvm_clk_rst_if.sv
+interfaces/i2c_if.sv
+agents/i2c_agent/i2c_agent_pkg.sv
+env/i2c_env_pkg.sv
+tests/i2c_base_test.sv
+tb_top.sv

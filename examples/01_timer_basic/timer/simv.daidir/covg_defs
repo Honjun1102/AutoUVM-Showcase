@@ -1,0 +1,39 @@
+global coverage_group 0 0 timer_env_pkg::timer_env_coverage::apb_cg __coverage_timer_env_coverage.apb_cg unused_timer_env_coverage_apb_cg_loop_label timer_env_pkg 0 1 0 0 0  ( 0 
+)
+ 1 1
+ 0 84 /home/yian/桌面/AutoUVM/test_results/extended_test/timer/env/timer_env_coverage.sv
+ 17 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 62 timer_env_coverage::timer_env_pkg_timer_env_coverage_apb_cg_fn
+0
+0
+0
+64
+0
+ 0
+
+0
+0
+0
+0
+end_coverage_group

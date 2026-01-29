@@ -22,10 +22,21 @@
 
 ## 📺 快速演示
 
+### 🎯 完整示例代码（可直接查看）
+
+本仓库包含完整的**实际运行**代码：
+
+- 📁 [`examples/`](./examples/) - 多个完整验证环境示例
+  - [`01_timer_basic/`](./examples/01_timer_basic/) - Timer验证（AXI-Lite）
+  - [`02_ahb_lite_memory/`](./examples/02_ahb_lite_memory/) - AHB-Lite内存控制器
+- 📊 [`test_reports/`](./test_reports/) - 真实测试覆盖率报告
+  - [`verification_report.html`](./test_reports/verification_report.html) - 多模块SoC验证报告
+
 ### 视频演示（即将上线）
 - 🎬 Timer快速入门 (5分钟)
 - 🎬 AXI4 DMA控制器验证 (8分钟)
 - 🎬 覆盖率驱动验证 (6分钟)
+- 🎬 AHB-Lite完整流程 (7分钟)
 
 ### GIF演示
 
@@ -46,6 +57,24 @@ $ cd timer_tb && make sim
 
 UVM_INFO: All tests PASSED
 Coverage: 93.5% (Line), 89.2% (Functional)
+```
+
+### 📖 查看示例代码
+
+**立即浏览**完整的生成代码：
+
+```bash
+# Clone展示仓库
+git clone https://github.com/Honjun1102/AutoUVM-Showcase.git
+cd AutoUVM-Showcase
+
+# 查看Timer示例
+cd examples/01_timer_basic
+cat README.md              # 详细说明
+ls -R agents/ env/ tests/  # 查看生成的UVM代码
+
+# 查看测试报告
+firefox ../test_reports/verification_report.html
 ```
 
 ---

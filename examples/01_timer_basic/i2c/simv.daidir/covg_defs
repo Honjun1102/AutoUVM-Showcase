@@ -1,0 +1,39 @@
+global coverage_group 0 0 i2c_env_pkg::i2c_env_coverage::i2c_cg __coverage_i2c_env_coverage.i2c_cg unused_i2c_env_coverage_i2c_cg_loop_label i2c_env_pkg 0 1 0 0 0  ( 0 
+)
+ 1 1
+ 0 80 /home/yian/桌面/AutoUVM/test_results/extended_test/i2c/env/i2c_env_coverage.sv
+ 17 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 56 i2c_env_coverage::i2c_env_pkg_i2c_env_coverage_i2c_cg_fn
+0
+0
+0
+64
+0
+ 0
+
+0
+0
+0
+0
+end_coverage_group

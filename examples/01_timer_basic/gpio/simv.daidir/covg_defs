@@ -1,0 +1,39 @@
+global coverage_group 0 0 gpio_env_pkg::gpio_env_coverage::gpio_cg __coverage_gpio_env_coverage.gpio_cg unused_gpio_env_coverage_gpio_cg_loop_label gpio_env_pkg 0 1 0 0 0  ( 0 
+)
+ 1 1
+ 0 82 /home/yian/桌面/AutoUVM/test_results/extended_test/gpio/env/gpio_env_coverage.sv
+ 17 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 60 gpio_env_coverage::gpio_env_pkg_gpio_env_coverage_gpio_cg_fn
+0
+0
+0
+64
+0
+ 0
+
+0
+0
+0
+0
+end_coverage_group

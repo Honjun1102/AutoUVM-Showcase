@@ -1,0 +1,39 @@
+global coverage_group 0 0 pwm_env_pkg::pwm_env_coverage::pwm_cg __coverage_pwm_env_coverage.pwm_cg unused_pwm_env_coverage_pwm_cg_loop_label pwm_env_pkg 0 1 0 0 0  ( 0 
+)
+ 1 1
+ 0 80 /home/yian/桌面/AutoUVM/test_results/extended_test/pwm/env/pwm_env_coverage.sv
+ 17 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 56 pwm_env_coverage::pwm_env_pkg_pwm_env_coverage_pwm_cg_fn
+0
+0
+0
+64
+0
+ 0
+
+0
+0
+0
+0
+end_coverage_group

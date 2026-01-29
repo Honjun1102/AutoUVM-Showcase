@@ -1,0 +1,39 @@
+global coverage_group 0 0 fifo_env_pkg::fifo_env_coverage::fifo_cg __coverage_fifo_env_coverage.fifo_cg unused_fifo_env_coverage_fifo_cg_loop_label fifo_env_pkg 0 1 0 0 0  ( 0 
+)
+ 1 1
+ 0 82 /home/yian/桌面/AutoUVM/test_results/extended_test/fifo/env/fifo_env_coverage.sv
+ 17 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 60 fifo_env_coverage::fifo_env_pkg_fifo_env_coverage_fifo_cg_fn
+0
+0
+0
+64
+0
+ 0
+
+0
+0
+0
+0
+end_coverage_group

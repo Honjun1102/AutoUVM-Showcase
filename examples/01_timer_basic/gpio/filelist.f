@@ -1,0 +1,17 @@
++incdir+/src
++incdir+.
++incdir+./agents
++incdir+./agents/gpio_agent
++incdir+./components
++incdir+./env
++incdir+./interfaces
++incdir+./ral
++incdir+./rtl
++incdir+./scoreboards
++incdir+./tests
+interfaces/autouvm_clk_rst_if.sv
+interfaces/gpio_if.sv
+agents/gpio_agent/gpio_agent_pkg.sv
+env/gpio_env_pkg.sv
+tests/gpio_base_test.sv
+tb_top.sv
