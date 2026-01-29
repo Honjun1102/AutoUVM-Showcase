@@ -46,13 +46,23 @@ package system_pkg;
   // ========== Environment ==========
   `include "env/system_env.sv"
   
-  // ========== Sequences ==========
+  // ========== Sequences (8个) ==========
   `include "sequences/cpu_random_seq.sv"
   `include "sequences/dma_burst_seq.sv"
   `include "sequences/debug_reg_seq.sv"
+  `include "sequences/stress_burst_seq.sv"
+  `include "sequences/back2back_seq.sv"
+  `include "sequences/random_delay_seq.sv"
+  `include "sequences/outstanding_seq.sv"
+  `include "sequences/address_sweep_seq.sv"
   
-  // ========== Tests ==========
+  // ========== Tests (6个) ==========
   `include "tests/concurrent_access_test.sv"
+  `include "tests/stress_test.sv"
+  `include "tests/outstanding_test.sv"
+  `include "tests/arbiter_test.sv"
+  `include "tests/address_decode_test.sv"
+  `include "tests/random_traffic_test.sv"
   
 endpackage
 
